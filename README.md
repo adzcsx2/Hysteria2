@@ -24,7 +24,7 @@ step2:
 ```
 wget -N --no-check-certificate "https://raw.githubusercontent.com/adzcsx2/Trojansh/master/trojan2.sh" && chmod +x trojan2.sh && ./trojan2.sh
 ```
-step3: （如果需要搭建trojan协议，不需要可以省略,trojan和hysteria同443端口不冲突）
+step3: （如果需要搭建trojan协议，不需要可以省略,trojan和hysteria由于一个是tcp一个是udp，所以同443端口不冲突）
 ```
 
 wget -N --no-check-certificate "https://raw.githubusercontent.com/adzcsx2/Trojansh/master/trojan3.sh" && chmod +x trojan3.sh && ./trojan3.sh
