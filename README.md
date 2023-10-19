@@ -99,7 +99,7 @@ firewall-cmd --add-port=1-65535/tcp --permanent
 firewall-cmd --add-port=1-65535/udp --permanent
 ```
 
-#### 开启UDP流量转发
+#### 开启UDP流量转发 （20000到50000端口转443）
 ```
 firewall-cmd --add-forward-port=port=20000-50000:proto=udp:toport=443 --permanent
 ```
