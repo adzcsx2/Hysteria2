@@ -123,3 +123,25 @@ systemctl stop hysteria-server.service
 #设置开机自启
 systemctl enable hysteria-server.service
 ```
+```
+#启动服务
+systemctl start firewalld
+#关闭服务
+systemctl stop firewalld
+#重启服务
+systemctl restart firewalld
+#查看服务状态
+systemctl status firewalld
+#开机自启服务
+systemctl enable firewalld
+#开机禁用服务
+systemctl disable firewalld
+#查看是否开机自启
+systemctl is-enable firewalld
+#开启UDP流量转发 （20000到50000端口转443）
+firewall-cmd --add-forward-port=port=20000-50000:proto=udp:toport=443 --permanent
+#删除UDP流量转发 （20000到50000端口转443）
+firewall-cmd --remove-forward-port=port=20000-50000:proto=udp:toport=443 --permanent
+#重载应用配置
+firewall-cmd --reload
+```
