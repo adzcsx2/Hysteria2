@@ -111,7 +111,7 @@ firewall-cmd --reload
 
 
 ## 其他命令
-###Hysteria2
+### Hysteria2
 ```
 #启动Hysteria2
 systemctl start hysteria-server.service
@@ -124,7 +124,7 @@ systemctl stop hysteria-server.service
 #设置开机自启
 systemctl enable hysteria-server.service
 ```
-###firewalld
+### firewalld
 ```
 #启动服务
 systemctl start firewalld
