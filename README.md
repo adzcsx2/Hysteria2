@@ -180,6 +180,25 @@ firewall-cmd --remove-forward-port=port=20000-50000:proto=udp:toport=443 --perma
 #重载应用配置
 firewall-cmd --reload
 ```
+### trojan
+```
+#启动
+systemctl start trojan
+#重启
+systemctl restart trojan
+#关闭
+systemctl stop trojan
+#状态查询（如果有显示绿色active(running)，就表示正常运行中）
+systemctl status trojan
+#错误查询
+journalctl -e -u trojan.service
+#开机自动启动
+systemctl enable trojan
+#禁止开机自动启动
+systemctl disable trojan
+```
+
+
 ### 配置文件路径
 #### trojan:
 ```
