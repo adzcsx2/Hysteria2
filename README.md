@@ -181,9 +181,11 @@ firewall-cmd --remove-forward-port=port=20000-50000:proto=udp:toport=443 --perma
 firewall-cmd --reload
 ```
 ### 配置文件路径
+#### trojan:
 ```
-trojan:
 /usr/local/etc/trojan/config.json
-hysteria2
+```
+#### hysteria2
+```
 /etc/hysteria
 ```
