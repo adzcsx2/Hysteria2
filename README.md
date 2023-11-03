@@ -239,7 +239,7 @@ systemctl disable trojan
 
 ### 客户端配置文件
 ```
-server: hot3dgame.com:20000-50000
+server: 你的域名:20000-50000 
 auth: 123456
 
 bandwidth:
