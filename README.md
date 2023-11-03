@@ -68,6 +68,18 @@ masquerade:
   proxy:
     url: https://bing.com #伪装网址
     rewriteHost: true
+obfs:
+  type: salamander
+  salamander:
+    password: 1231231 
+quic:
+  initStreamReceiveWindow: 8388608 
+  maxStreamReceiveWindow: 8388608 
+  initConnReceiveWindow: 20971520 
+  maxConnReceiveWindow: 20971520 
+  maxIdleTimeout: 30s 
+  keepAlivePeriod: 10s 
+  disablePathMTUDiscovery: false 
 EOF
 ```
 
@@ -97,6 +109,18 @@ masquerade:
   proxy:
     url: https://bing.com #伪装网址
     rewriteHost: true
+obfs:
+  type: salamander
+  salamander:
+    password: 1231231 
+quic:
+  initStreamReceiveWindow: 8388608 
+  maxStreamReceiveWindow: 8388608 
+  initConnReceiveWindow: 20971520 
+  maxConnReceiveWindow: 20971520 
+  maxIdleTimeout: 30s 
+  keepAlivePeriod: 10s 
+  disablePathMTUDiscovery: false
 EOF
 ```
 
@@ -207,4 +231,38 @@ systemctl disable trojan
 #### hysteria2
 ```
 /etc/hysteria
+```
+
+### 客户端配置文件
+```
+server: hot3dgame.com:20000-50000
+auth: 123456
+
+bandwidth:
+  up: 30 mbps
+  down: 100 mbps
+  
+tls:
+  sni: cn.bing.com
+  insecure: true #使用自签时需要改成true
+transport:
+  udp:
+    hopInterval: 30s 
+socks5:
+  listen: 127.0.0.1:1080
+http:
+  listen: 127.0.0.1:8080
+obfs:
+  type: salamander
+  salamander:
+    password: 1231231 
+quic:
+  initStreamReceiveWindow: 8388608 
+  maxStreamReceiveWindow: 8388608 
+  initConnReceiveWindow: 20971520 
+  maxConnReceiveWindow: 20971520 
+  maxIdleTimeout: 30s 
+  keepAlivePeriod: 10s 
+  disablePathMTUDiscovery: false 
+lazy: true
 ```
