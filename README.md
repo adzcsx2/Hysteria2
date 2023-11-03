@@ -13,7 +13,7 @@ apt install socat
 ```
 wget -N --no-check-certificate "https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 ```
-#### 搭建伪装网站和注册证书
+#### 搭建伪装网站和注册证书，以及trojan协议
 step1:
 ```
 
