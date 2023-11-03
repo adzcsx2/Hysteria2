@@ -134,6 +134,10 @@ systemctl enable hysteria-server.service
 ```
 systemctl restart hysteria-server.service
 ```
+#### 查看是否开启成功
+```
+systemctl status hysteria-server.service
+```
 
 
 
