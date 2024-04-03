@@ -66,7 +66,7 @@ auth:
 masquerade:
   type: proxy
   proxy:
-    url: https://bing.com #伪装网址
+    url: https://my-domain.com #伪装网址
     rewriteHost: true
 obfs:
   type: salamander
