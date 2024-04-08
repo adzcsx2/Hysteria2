@@ -68,10 +68,6 @@ masquerade:
   proxy:
     url: https://my-domain.com #伪装网址
     rewriteHost: true
-obfs:
-  type: salamander
-  salamander:
-    password: 1231231 
 quic:
   initStreamReceiveWindow: 8388608 
   maxStreamReceiveWindow: 8388608 
