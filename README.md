@@ -148,13 +148,11 @@ sudo apt-get install firewalld
 systemctl enable firewalld
 ```
 
-#### 开放端口
-
-#开启TCP流量端口
+#### 开启TCP流量端口
 ```
 firewall-cmd --add-port=1-65535/tcp --permanent
 ```
-#开启UDP流量端口
+#### 开启UDP流量端口
 ```
 firewall-cmd --add-port=1-65535/udp --permanent
 ```
