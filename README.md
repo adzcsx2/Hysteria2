@@ -66,7 +66,7 @@ auth:
 masquerade:
   type: proxy
   proxy:
-    url: https://my-domain.com #伪装网址
+    url: https://wps.com #伪装网址
     rewriteHost: true
 quic:
   initStreamReceiveWindow: 8388608 
@@ -103,7 +103,7 @@ auth:
 masquerade:
   type: proxy
   proxy:
-    url: https://bing.com #伪装网址
+    url: https://wps.com #伪装网址
     rewriteHost: true
 quic:
   initStreamReceiveWindow: 8388608 
@@ -244,7 +244,7 @@ bandwidth:
   down: 100 mbps
   
 tls:
-  sni: cn.bing.com
+  sni: https://wps.com
   insecure: true #使用自签时需要改成true
 transport:
   udp:
